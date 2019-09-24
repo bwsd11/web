@@ -6,6 +6,10 @@
     "typecheck": "lerna run typecheck",
     "lint": "tslint --project tsconfig.json -c tslint.json -t codeFrame backend/**/*.ts"
   },
+  "workspaces": [
+    "backend/*",
+    "frontend/*"
+  ],
   "devDependencies": {
     "lerna": "3.15.0",
     "tslint": "^5.17.0",
@@ -15,5 +19,8 @@
     "hooks": {
       "pre-push": "yarn lint && yarn typecheck"
     }
+  },
+  "dependencies": {
+    "yarn": "^1.17.3"
   }
 }

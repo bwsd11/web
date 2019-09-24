@@ -11,9 +11,10 @@ import { GraphQLDate, GraphQLTime, GraphQLDateTime } from 'graphql-iso-date'
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_HOST || 'db',
+      host: process.env.DB_HOST || 'localhost',
+      port: 5432,
       database: process.env.DB_NAME || 'au',
-      username: process.env.DB_USERNAME || 'root',
+      username: process.env.DB_USERNAME || 'roott',
       password: process.env.DB_PASSWORD || 'root',
       entities: [
         '../**/src/**/entities/**.ts',
