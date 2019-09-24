@@ -3,7 +3,7 @@ import { injectIntl, InjectedIntl } from 'react-intl'
 import { Column, Layout, Row } from '@ui/layout'
 import { Text } from '@ui/text'
 import { Input } from '@ui/input'
-import { Button } from '@ui/button'
+import { Button } from '@ui/button/src'
 import { RouteLink } from '@ui/link'
 import messages from '../../messages'
 
